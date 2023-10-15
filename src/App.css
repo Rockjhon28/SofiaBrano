@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 6em;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 50%;
+}
+
+/* Agregamos un efecto de sombra en hover */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.1); /* Hacer el logo ligeramente más grande en hover */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+/* Estilos para los botones */
+.network-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.network-buttons button, .network-buttons a {
+  background-color: #61dafb;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  margin: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.network-buttons a svg {
+  margin-right: 0.5rem; /* Ajusta el espacio según tus preferencias */
+}
+.network-buttons button:hover, .network-buttons a:hover {
+  background-color: #3f8ec9;
+}
+
+.read-the-docs {
+  color: #888;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+/* CSS */
+/* CSS */
+@keyframes changeTextColor {
+  0% {
+    color: #c838ff; /* Inicia con color rosado violeta */
+  }
+  20% {
+    color: #d45eff; /* Cambio gradual al violeta */
+  }
+  40% {
+    color: #ea80ff; /* Cambio gradual al rosado claro */
+  }
+  60% {
+    color: #f5a1ff; /* Cambio gradual al rosado más claro */
+  }
+  80% {
+    color: #ffffff; /* Termina con color blanco */
+  }
+  100% {
+    color: #c838ff; /* Vuelve a iniciar con color rosado violeta */
+  }
+}
+
+
+h1 {
+  font-size: 2rem;
+  animation: changeTextColor 5s infinite; /* Aplicamos la animación para cambiar el color de texto */
+  cursor: pointer;
+}
+@keyframes moveLines {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: 0% 0;
+  }
+  75% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+body {
+  background: linear-gradient(to right, #ff69b4, #87ceeb, #98fb98);
+  background-size: 200% 200%;
+  animation: moveLines 5s linear infinite;
+  overflow: hidden;
+}
+
+
+
+
+
+
